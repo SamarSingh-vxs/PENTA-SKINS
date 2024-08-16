@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penta Skins</title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="x-icon" href="4+.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body
+    
+>  
+<dialog id="login-dialog">
+    <div class="wrapper">
+        <h1>Login</h1>
+        <form>
+        <input type="email"placeholder="Email"><br>
+        <input type="password"placeholder="Password"><br>
+        <button type="submit" id="submit">Login</button><br>
+        <button onclick=closeLoginDialog() type="button" id="x">✕</button>
+        </form>
+        <p>Copyright © 2024 Penta Skins</p>
+
+    </div>
+   
+
+</dialog>
+
+<!-- header -->
+     <header>
+        <a href=""> <div class="logo">
+            Penta Skins
+        </div></a>
+        <nav>
+          
+           
+            <button onclick=showLoginDialog()>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
+        </button>
+        <button>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M425.37-189.5v-257.54L197.83-580.22v259.07L425.37-189.5Zm110.02 0 226.02-131.65v-258.07L535.39-447.8v258.3ZM423.41-59.09 141.24-221.17q-26.67-14.96-41.63-41.13-14.96-26.18-14.96-56.85v-320.7q0-30.91 14.96-57.08 14.96-26.18 41.63-41.14l282.17-161.84q26.68-14.96 56.59-14.96 29.91 0 56.59 14.96L818-738.07q26.67 14.96 41.63 41.14 14.96 26.17 14.96 57.08v320.7q0 30.67-14.96 56.85-14.96 26.17-41.63 41.13L536.59-59.09Q509.91-44.13 480-44.13q-29.91 0-56.59-14.96Zm221.92-579.82 57.69-33.61L480-800.93l-57.7 33.6 223.03 128.42ZM480-542.87l56.17-32.85-223.26-129.17-55.93 32.37L480-542.87Z"/></svg></a>
+
+        </button>
+<button>
+    <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M280-240q-17 0-28.5-11.5T240-280v-80h520v-360h80q17 0 28.5 11.5T880-680v600L720-240H280ZM80-280v-560q0-17 11.5-28.5T120-880h520q17 0 28.5 11.5T680-840v360q0 17-11.5 28.5T640-440H240L80-280Zm520-240v-280H160v280h440Zm-440 0v-280 280Z"/></svg></a>
+
+</button>           
+            <button id="theme-switch">
+                
+                
+                <svg xmlns="http://www.w3.org/2000/svg" id="moon" height="30px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M479.9-110.63q-154.63 0-261.95-107.38t-107.32-262q0-154.63 107.37-262.45 107.38-107.82 262-107.82 6.54 0 15.4.5 8.85.5 24.06 1.84-31.05 32.72-48.12 77.85-17.06 45.13-17.06 91.39 0 93.53 66.2 159.1 66.21 65.56 159.96 65.56 47.84 0 90.03-15.02t77.62-47.17q.42 9.73 1.3 19.69.89 9.97.89 16.29 0 154.57-108.04 262.1Q634.2-110.63 479.9-110.63Zm.1-89.26q88.56 0 159.49-51.07 70.94-51.07 97.03-125.56-14.51 5.25-32.16 8.1-17.66 2.85-33.28 2.61-125.26-3.43-213.39-90.47-88.13-87.05-91.88-213.09-.24-15.27 2.06-32.04 2.3-16.78 9.73-37.11-79.25 31.66-128.48 102.77-49.23 71.1-49.23 155.75 0 116.97 81.57 198.54T480-199.89Zm-11.67-269.1Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" id="sun" height="30px" viewBox="0 -960 960 960" width="40px" fill="#FFFF55"><path d="M479.97-363q48.25 0 83.05-34.23 34.81-34.23 34.81-82.74 0-48.25-34.78-83.05-34.77-34.81-83.02-34.81-48.25 0-82.64 34.78Q363-528.28 363-480.03q0 48.25 34.23 82.64T479.97-363Zm-.01 89.42q-86.09 0-146.24-60.14-60.14-60.15-60.14-146.24 0-86.08 60.14-146.61 60.15-60.52 146.24-60.52 86.08 0 146.61 60.52 60.52 60.53 60.52 146.61 0 86.09-60.52 146.24-60.53 60.14-146.61 60.14ZM211.63-435.7H29.04v-89.26h182.59v89.26Zm720 0H749.04v-89.26h182.59v89.26ZM435.7-749.04v-182.59h89.26v182.59H435.7Zm0 720v-182.59h89.26v182.59H435.7ZM260.52-639.17l-116.6-113.61 63.08-64.3 112.32 115.27-58.8 62.64Zm493.81 494.82-113.55-113.9 59.89-62.83 115.41 113.03-61.75 63.7Zm-115.5-556.22 113.95-115.51 64.3 61.75-114.6 114.32-63.65-60.56ZM144.35-207.09l113.24-112.8 63.49 60.56-113.03 115.41-63.7-63.17ZM480-480Z"/></svg>
+            </button>
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M160-280v80h640v-80H160Zm0-440h88q-5-9-6.5-19t-1.5-21q0-50 35-85t85-35q30 0 55.5 15.5T460-826l20 26 20-26q18-24 44-39t56-15q50 0 85 35t35 85q0 11-1.5 21t-6.5 19h88q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720Zm0 320h640v-240H596l84 114-64 46-136-184-136 184-64-46 82-114H160v240Zm200-320q17 0 28.5-11.5T400-760q0-17-11.5-28.5T360-800q-17 0-28.5 11.5T320-760q0 17 11.5 28.5T360-720Zm240 0q17 0 28.5-11.5T640-760q0-17-11.5-28.5T600-800q-17 0-28.5 11.5T560-760q0 17 11.5 28.5T600-720Z"/></svg>
+            </button>
+        </nav>
+     </header>
+     <!-- carousel -->
+      <div class="carousel">
+
+        <div class="list">
+
+
+
+            <div class="item">
+                <img src="1.png">
+                <div class="intro">
+                    <div class="title">
+                        BAKI HANMA
+                    </div>
+                    <div class="topic">
+                        Skins For Mobile <br>AT → <span>-50% OFF🔥</span>
+                    </div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sunt modi dolorem laborum aliquid consequuntur quis debitis illo! Quae, vero!
+                    </div>
+                    <button class="SeeMore">
+                        See More &#8599
+                    </button>
+                    <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+
+                </div>
+                <div class="detail">
+                    <div class="title">
+                        Aerophone LD
+                    </div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt laboriosam quia ab repellat odio? Doloribus praesentium nihil amet sed odio!
+                    </div>
+                    <div class="specification">
+
+                    <div>
+                    <p>USED Time</p>
+                    <p>6 HOURS</p>
+                </div>
+                <div>
+                    <p>Charging Port</p>
+                    <p>TYPE-C</p>
+                    <div>
+                        <p>Compitable</p>
+                        <p>Android</p>
+                    </div>
+                    <div>
+                        <p>BLUETOOTH</p>
+                        <p>5.3</p>
+                    </div>
+                    <div>
+                        <p>Controled</p>
+                        <p>Touch</p>
+                    </div>
+                    <div class="checkout">
+                        <button>ADD TO CART</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+
+
+       <div class="item">
+                <img src="2.png">
+                <div class="intro">
+                    <div class="title">
+                        'LUFFY'
+                    </div>
+                    <div class="topic">
+                        THE SUN GOD NIKA 
+
+                    </div>
+                    <div class="des" >
+                        AT→ <span>399</span> only🎴<BR>
+                        Fan Favourite Mobile Skin Of All Time.
+                    </div>
+                    <button class="SeeMore">
+                        See More &#8599
+                    </button>
+                    <button class="add success" >Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="detail">
+                    <div class="title">
+                        Aerophone LD
+                    </div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt laboriosam quia ab repellat odio? Doloribus praesentium nihil amet sed odio!
+                    </div>
+                    <div class="specification">
+
+                    <div>
+                    <p>USED Time</p>
+                    <p>6 HOURS</p>
+                </div>
+                <div>
+                    <p>Charging Port</p>
+                    <p>TYPE-C</p>
+                    <div>
+                        <p>Compitable</p>
+                        <p>Android</p>
+                    </div>
+                    <div>
+                        <p>BLUETOOTH</p>
+                        <p>5.3</p>
+                    </div>
+                    <div>
+                        <p>Controled</p>
+                        <p>Touch</p>
+                    </div>
+                    <div class="checkout">
+                        <button>ADD TO CART</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="3.png">
+                <div class="intro">
+                    <div class="title">
+                        Design Slider
+                    </div>
+                    <div class="topic">
+                        Aerophone
+                    </div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sunt modi dolorem laborum aliquid consequuntur quis debitis illo! Quae, vero!
+                    </div>
+                    <button class="SeeMore">
+                        See More &#8599
+                    </button>
+                    <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="detail">
+                    <div class="title">
+                        Aerophone LD
+                    </div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt laboriosam quia ab repellat odio? Doloribus praesentium nihil amet sed odio!
+                    </div>
+                    <div class="specification">
+
+                    <div>
+                    <p>USED Time</p>
+                    <p>6 HOURS</p>
+                </div>
+                <div>
+                    <p>Charging Port</p>
+                    <p>TYPE-C</p>
+                    <div>
+                        <p>Compitable</p>
+                        <p>Android</p>
+                    </div>
+                    <div>
+                        <p>BLUETOOTH</p>
+                        <p>5.3</p>
+                    </div>
+                    <div>
+                        <p>Controled</p>
+                        <p>Touch</p>
+                    </div>
+                    <div class="checkout">
+                        <button>ADD TO CART</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <img src="4.png">
+                <div class="intro">
+                    <div class="title">
+                        Design Slider
+                    </div>
+                    <div class="topic">
+                        Aerophone
+                    </div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sunt modi dolorem laborum aliquid consequuntur quis debitis illo! Quae, vero!
+                    </div>
+                    <button class="SeeMore">
+                        See More &#8599
+                    </button>
+                    <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="detail">
+                    <div class="title">
+                        Aerophone LD
+                    </div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt laboriosam quia ab repellat odio? Doloribus praesentium nihil amet sed odio!
+                    </div>
+                    <div class="specification">
+
+                    <div>
+                    <p>USED Time</p>
+                    <p>6 HOURS</p>
+                </div>
+                <div>
+                    <p>Charging Port</p>
+                    <p>TYPE-C</p>
+                    <div>
+                        <p>Compitable</p>
+                        <p>Android</p>
+                    </div>
+                    <div>
+                        <p>BLUETOOTH</p>
+                        <p>5.3</p>
+                    </div>
+                    <div>
+                        <p>Controled</p>
+                        <p>Touch</p>
+                    </div>
+                    <div class="checkout">
+                        <button>ADD TO CART</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+
+
+
+            <div class="item">
+                <img src="5.png">
+                <div class="intro">
+                    <div class="title">
+                        Design Slider
+                    </div>
+                    <div class="topic">
+                        Aerophone
+                    </div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sunt modi dolorem laborum aliquid consequuntur quis debitis illo! Quae, vero!
+                    </div>
+                    <button class="SeeMore">
+                        See More &#8599
+                    </button>
+                    <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="detail">
+                    <div class="title">
+                        Aerophone LD
+                    </div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt laboriosam quia ab repellat odio? Doloribus praesentium nihil amet sed odio!
+                    </div>
+                    <div class="specification">
+
+                    <div>
+                    <p>USED Time</p>
+                    <p>6 HOURS</p>
+                </div>
+                <div>
+                    <p>Charging Port</p>
+                    <p>TYPE-C</p>
+                    <div>
+                        <p>Compitable</p>
+                        <p>Android</p>
+                    </div>
+                    <div>
+                        <p>BLUETOOTH</p>
+                        <p>5.3</p>
+                    </div>
+                    <div>
+                        <p>Controled</p>
+                        <p>Touch</p>
+                    </div>
+                    <div class="checkout">
+                        <button ib="#add">ADD TO CART</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            <div class="arrows">
+               <button id="prev"><</button>
+               <button id="back">GO BACK &#8599</button>
+               <button id="next">
+>
+               </button>
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="hero">
+
+        <a href="index.html">
+            <div class="hero-image"> </div>
+        </a>
+
+        <div class="hero-content">
+            <h3>penta skins </h3>
+            <br>
+            Launches The ALL NEW <span><h1>(ANIME SERIES)</h1></span>of mobile phone & Laptop skins.
+            <img src="4++.png" alt="" id="hand-on">
+        </div>
+
+        <div class="hero-bst"><a href="#">  <img src="bst+1.jpg" alt=""></a>
+   
+     <span>
+        Best Seller
+    <br>
+    The <br>Sun God Nika<br><H3>'LUFFY'</H3>Mobile Phone Skin
+
+<h3><legend>AT⇒₹369/-only</legend></h3>
+
+
+<button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+
+
+    
+   
+     </span>
+        </div>
+
+
+      </div>
+
+
+
+
+
+<div class="shop">
+     
+        <div class="block">
+            <div class="card">
+                <img src="2.png" alt="">
+                <p> <legend>₹369 </legend> only</p>
+                
+              
+             
+              
+              <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+            
+        </div>
+        <div class="card">
+            
+                <img src="2+.jpg" alt="">
+                <p> <legend>₹399 </legend> only</p>
+              <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+
+        </div>
+        <div class="card">
+          
+                <img src="3+.jpg" alt="">
+                <a href=""></a>
+                <p> <legend>₹399 </legend> only</p>
+                
+              
+             
+              
+                <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+    <div class="card">
+        
+            <img src="4+.jpg" alt="">
+            <a href=""></a>
+            <p> <legend>₹499 </legend> only</p>
+                
+              
+             
+              
+            <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+    <div class="card">
+        
+        <img src="7+.jpg" alt="">
+        <a href=""></a>
+        <p> <legend>₹499 </legend> only</p>
+                
+              
+             
+              
+        <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+    
+    </div>
+       
+          
+    <div class="block">
+        <div class="card">
+            <img src="1.png" alt="">
+            <p> <legend>₹499 </legend> only</p>
+            
+          
+         
+          
+          <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+        
+    </div>
+    <div class="card">
+        
+            <img src="6+.jpg" alt="">
+            <p> <legend>₹490 </legend> only</p>
+          <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+
+    </div>
+    <div class="card">
+      
+            <img src="3.png" alt="">
+            <a href=""></a>
+            <p> <legend>₹599 </legend> only</p>
+            
+          
+         
+          
+            <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+<div class="card">
+    
+        <img src="5.png" alt="">
+        <a href=""></a>
+        <p> <legend>₹499 </legend> only</p>
+            
+          
+         
+          
+        <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+<div class="card">
+    
+    <img src="7+.jpg" alt="">
+    <a href=""></a>
+    <p> <legend>₹449 </legend> only</p>
+            
+          
+         
+          
+    <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+
+</div>
+
+
+<div class="block">
+  
+<div class="card"id=laptop>
+    
+        <img src="m1.jpg" alt="">
+        <p> <legend>₹1199 </legend> only</p>
+      <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+
+</div>
+<div class="card "id=laptop>
+  
+        <img src="m2.jpg" alt="">
+        <a href=""></a>
+        <p> <legend>₹1119 </legend> only</p>
+        
+      
+     
+      
+        <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+<div class="card"id=laptop>
+
+    <img src="m4.jpg" alt="">
+    <a href=""></a>
+    <p> <legend>₹1099 </legend> only</p>
+        
+      
+     
+      
+    <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="block">
+    <div class="card">
+        <img src="1+.jpg" alt="">
+        <p> <legend>₹449 </legend> only</p>
+        
+      
+     
+      
+      <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+    
+</div>
+<div class="card">
+    
+        <img src="2+.jpg" alt="">
+        <p> <legend>₹399 </legend> only</p>
+      <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+
+</div>
+<div class="card">
+  
+        <img src="3+.jpg" alt="">
+        <a href=""></a>
+        <p> <legend>₹399 </legend> only</p>
+        
+      
+     
+      
+        <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+<div class="card">
+
+    <img src="4+.jpg" alt="">
+    <a href=""></a>
+    <p> <legend>₹399 </legend> only</p>
+        
+      
+     
+      
+    <button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+<div class="card">
+
+<img src="7+.jpg" alt="">
+<a href=""></a>
+<p> <legend>₹399 </legend> only</p>
+        
+      
+     
+      
+<button class="add">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="notifications" id="notifications">
+      
+</div>
+
+<div class="content">
+     <div class="naruto context"></div>
+    <div class="one-piece context"></div>
+    <div class="demon-slayer context"></div>
+    <div class="death-note context"></div>
+    <div class="jjk context"></div>
+   
+    </div>
+<div class="tab">
+
+<div class="tab-element">
+
+</div>
+<div class="tab-element">
+
+</div>
+
+</div>
+   <script src="Toast.js">
+   </script>
+    <script src="app.js">
+    
+        
+   </script>
+  
+    
+</body>
+</html>
